@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VehicleTrackingSystem</string>
+    <string-array name="Locations">
+        <item>--Select Location--</item>
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
