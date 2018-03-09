@@ -12,7 +12,7 @@
         android:id="@+id/phone"
         android:textColorHint="#000000"
         android:gravity="center"/>
-
+<!--
     <Spinner
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
@@ -29,22 +29,26 @@
         android:gravity="center"
         android:textSize="20sp"
         />
-
+-->
     <Button
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pick a location"
+        android:text="Pick Boarding Point"
         android:layout_gravity="center"
         android:id="@+id/pickLoc"/>
+
     <TextView
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pd"
+        android:text=""
         android:gravity="center"
         android:layout_marginBottom="20dp"/>
+
     <Button
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:text="Register"

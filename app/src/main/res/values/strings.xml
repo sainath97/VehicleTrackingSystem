@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">VehicleTrackingSystem</string>
     <string-array name="Locations">
-        <item>--Select Location--</item>
+        <item>--Select Boarding Point--</item>
         <item>one</item>
         <item>two</item>
         <item>three</item>
