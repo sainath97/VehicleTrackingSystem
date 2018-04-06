@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical"
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -10,26 +11,12 @@
         android:layout_height="wrap_content"
         android:hint="Phone Number"
         android:id="@+id/phone"
+        android:inputType="phone"
         android:textColorHint="#000000"
         android:gravity="center"/>
-<!--
-    <Spinner
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textAlignment="center"
-        android:id="@+id/location"
-        android:entries="@array/Locations"
-        />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="OR"
-        android:gravity="center"
-        android:textSize="20sp"
-        />
--->
+
+
     <Button
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"

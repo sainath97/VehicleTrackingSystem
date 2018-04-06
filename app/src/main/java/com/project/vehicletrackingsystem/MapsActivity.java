@@ -3,9 +3,8 @@ package com.project.vehicletrackingsystem;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.view.Menu;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -19,7 +18,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    LatLng loc;
+    LatLng loc,loc2;
     SharedPreferences pref;
     Editor editor;
     @Override
@@ -27,13 +26,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
         Bundle b=getIntent().getExtras();
         loc = new LatLng(b.getDouble("lat"),b.getDouble("lng"));
-
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        loc2= new LatLng(16.23,80.93);
+       // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
     }
 
 
@@ -49,10 +50,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
         // Add a marker in Sydney and move the camera
         LatLng sydney = loc;
+        LatLng place=loc2;
         mMap.addMarker(new MarkerOptions().position(sydney).title("Bus No.49(30kmph)"));
+        mMap.addMarker(new MarkerOptions().position(place).title("Bus No.50(40kmph)"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
